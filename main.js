@@ -256,7 +256,7 @@ function beautiAvatar(_0xb767x3) {
         return _0xb767x4 = (_0xb767x4 = (_0xb767x4 = _0xb767x4.replace('//resources.blogblog.com/img/blank.gif', '//4.bp.blogspot.com/-oSjP8F09qxo/Wy1J9dp7b0I/AAAAAAAACF0/ggcRfLCFQ9s2SSaeL9BFSE2wyTYzQaTyQCK4BGAYYCw/s39/avatar.jpg')).replace('//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35', '//4.bp.blogspot.com/-oSjP8F09qxo/Wy1J9dp7b0I/AAAAAAAACF0/ggcRfLCFQ9s2SSaeL9BFSE2wyTYzQaTyQCK4BGAYYCw/s39/avatar.jpg')).replace('/s35', '/s39')
     })
 }
-$('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-main-nav .widget').addClass('show-menu'), $('.show-search').on('click', function () {
+$('#colorify-blogger-main-nav').menuify(), $('#colorify-blogger-main-nav .widget').addClass('show-menu'), $('.show-search').on('click', function () {
     $('body').addClass('search-active'), $('#main-search-wrap').fadeIn(170).find('input').focus()
 }), $('.hide-search').on('click', function () {
     $('body').removeClass('search-active'), $('#main-search-wrap').fadeOut(170).find('input').val('').blur()
@@ -285,7 +285,7 @@ $('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-ma
     var _0xb767x3 = $(this),
         _0xb767x4 = _0xb767x3.text(),
         _0xb767x5 = _0xb767x4.toLowerCase().trim();
-    _0xb767x5.match(/(?:\$ads\=\{1\})/g) && _0xb767x3.replaceWith('<div id="colorify-proBy-LimonSeo-new-before-ad"/>'), _0xb767x5.match(/(?:\$ads\=\{2\})/g) && _0xb767x3.replaceWith('<div id="colorify-proBy-LimonSeo-new-after-ad"/>'), _0xb767x5.match('{tocify}') && (_0xb767x4 = 0 != shortCodeIfy(_0xb767x4, 'title') ? shortCodeIfy(_0xb767x4, 'title') : 'Table of Contents', _0xb767x3.replaceWith('<div class="tocify-wrap"><div class="tocify-inner"><a href="javascript:;" class="tocify-title" role="button" title="' + _0xb767x4 + '"><span class="tocify-title-text">' + _0xb767x4 + '</span></a><ol id="tocify"></ol></div></div>'), $('.tocify-title').each(function (_0xb767x3) {
+    _0xb767x5.match(/(?:\$ads\=\{1\})/g) && _0xb767x3.replaceWith('<div id="colorify-blogger-new-before-ad"/>'), _0xb767x5.match(/(?:\$ads\=\{2\})/g) && _0xb767x3.replaceWith('<div id="colorify-blogger-new-after-ad"/>'), _0xb767x5.match('{tocify}') && (_0xb767x4 = 0 != shortCodeIfy(_0xb767x4, 'title') ? shortCodeIfy(_0xb767x4, 'title') : 'Table of Contents', _0xb767x3.replaceWith('<div class="tocify-wrap"><div class="tocify-inner"><a href="javascript:;" class="tocify-title" role="button" title="' + _0xb767x4 + '"><span class="tocify-title-text">' + _0xb767x4 + '</span></a><ol id="tocify"></ol></div></div>'), $('.tocify-title').each(function (_0xb767x3) {
         (_0xb767x3 = $(this)).on('click', function () {
             _0xb767x3.toggleClass('is-expanded'), $('#tocify').slideToggle(170)
         })
@@ -299,19 +299,19 @@ $('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-ma
             }, 500), !1
         })
     })), _0xb767x5.match('{contactform}') && (_0xb767x3.replaceWith('<div class="contact-form"/>'), $('.contact-form').append($('#ContactForm1'))), _0xb767x5.match('{leftsidebar}') && _0xb767x3.replaceWith('<style>.is-single #content-wrapper > .container{flex-direction:row-reverse}.rtl .is-single #content-wrapper > .container{flex-direction:row}</style>'), _0xb767x5.match('{rightsidebar}') && _0xb767x3.replaceWith('<style>.is-single #content-wrapper > .container{flex-direction:row}.rtl .is-single #content-wrapper > .container{flex-direction:row-reverse}</style>'), _0xb767x5.match('{fullwidth}') && _0xb767x3.replaceWith('<style>.is-single #main-wrapper{width:100%}.is-single #sidebar-wrapper{display:none}</style>')
-}), $('#colorify-proBy-LimonSeo-new-before-ad').each(function () {
+}), $('#colorify-blogger-new-before-ad').each(function () {
     var _0xb767x3 = $(this);
     _0xb767x3.length && $('#before-ad').appendTo(_0xb767x3)
-}), $('#colorify-proBy-LimonSeo-new-after-ad').each(function () {
+}), $('#colorify-blogger-new-after-ad').each(function () {
     var _0xb767x3 = $(this);
     _0xb767x3.length && $('#after-ad').appendTo(_0xb767x3)
-}), $('#colorify-proBy-LimonSeo-main-before-ad .widget').each(function () {
+}), $('#colorify-blogger-main-before-ad .widget').each(function () {
     var _0xb767x3 = $(this);
     _0xb767x3.length && _0xb767x3.appendTo($('#before-ad'))
-}), $('#colorify-proBy-LimonSeo-main-after-ad .widget').each(function () {
+}), $('#colorify-blogger-main-after-ad .widget').each(function () {
     var _0xb767x3 = $(this);
     _0xb767x3.length && _0xb767x3.appendTo($('#after-ad'))
-}), $('#colorify-proBy-LimonSeo-post-footer-ads .widget').each(function () {
+}), $('#colorify-blogger-post-footer-ads .widget').each(function () {
     var _0xb767x3 = $(this);
     _0xb767x3.length && _0xb767x3.appendTo($('#post-footer-ads'))
 }), $('.post-body blockquote').each(function () {
@@ -338,7 +338,7 @@ $('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-ma
         const _0xb767x4 = _0xb767x5.replace('{codeBox}', '');
         _0xb767x3.replaceWith('<pre class="code-box">' + _0xb767x4 + '</pre>')
     }
-}), $('.entry-share-links .window-ify,.colorify-proBy-LimonSeo-share-links .window-ify').on('click', function () {
+}), $('.entry-share-links .window-ify,.colorify-blogger-share-links .window-ify').on('click', function () {
     var _0xb767x3 = $(this),
         _0xb767x4 = _0xb767x3.data('url'),
         _0xb767x5 = _0xb767x3.data('width'),
@@ -348,7 +348,7 @@ $('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-ma
         _0xb767x9 = Math.round(_0xb767x7 / 2 - _0xb767x5 / 2),
         _0xb767x11 = Math.round(_0xb767x8 / 2 - _0xb767x6 / 2);
     window.open(_0xb767x4, '_blank', 'scrollbars=yes,resizable=yes,toolbar=no,location=yes,width=' + _0xb767x5 + ',height=' + _0xb767x6 + ',left=' + _0xb767x9 + ',top=' + _0xb767x11).focus()
-}), $('.colorify-proBy-LimonSeo-share-links').each(function () {
+}), $('.colorify-blogger-share-links').each(function () {
     var _0xb767x3 = $(this);
     _0xb767x3.find('.show-hid a').on('click', function () {
         _0xb767x3.toggleClass('show-hidden')
@@ -362,7 +362,7 @@ $('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-ma
             _0xb767x5 = _0xb767x3.attr('href');
         _0xb767x3.replaceWith('<li class="' + _0xb767x4 + '"><a href="' + _0xb767x5 + '" title="' + _0xb767x4 + '" rel="noopener noreferrer" target="_blank"/></li>')
     }), _0xb767x4.length && _0xb767x3.parent().append('<ul class="author-links social social-color"></ul>'), _0xb767x3.find('li').appendTo('.author-links')
-}), $('#colorify-proBy-LimonSeo-main-nav-menu li.mega-menu').each(function (_0xb767x3, _0xb767x4) {
+}), $('#colorify-blogger-main-nav-menu li.mega-menu').each(function (_0xb767x3, _0xb767x4) {
     var _0xb767x5 = $(this),
         _0xb767x6 = _0xb767x5.find('a').data('shortcode');
     null != _0xb767x6 && (_0xb767x3 = _0xb767x6.toLowerCase(), ajaxMega(_0xb767x5, 'msimple', 5, shortCodeIfy(_0xb767x6, 'label'), _0xb767x3))
@@ -373,14 +373,14 @@ $('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-ma
     null != _0xb767x6 && (mtc = _0xb767x6.toLowerCase(), _0xb767x3 = shortCodeIfy(_0xb767x6, 'label'), _0xb767x5.on('scroll', function _0xb767x6() {
         _0xb767x5.scrollTop() + _0xb767x5.height() >= _0xb767x4.offset().top && (_0xb767x5.off('scroll', _0xb767x6), ajaxTrending(_0xb767x4, 'trending', 5, _0xb767x3, mtc))
     }).trigger('scroll'))
-}), $('.colorify-proBy-LimonSeo-widget-ready .HTML .widget-content').each(function (_0xb767x3, _0xb767x4, _0xb767x5) {
+}), $('.colorify-blogger-widget-ready .HTML .widget-content').each(function (_0xb767x3, _0xb767x4, _0xb767x5) {
     var _0xb767x6 = $(this),
         _0xb767x7 = $(window),
         _0xb767x8 = _0xb767x6.data('shortcode');
     null != _0xb767x8 && (_0xb767x3 = _0xb767x8.toLowerCase(), _0xb767x4 = shortCodeIfy(_0xb767x8, 'results'), _0xb767x5 = shortCodeIfy(_0xb767x8, 'label'), _0xb767x7.on('scroll', function _0xb767x8() {
         _0xb767x7.scrollTop() + _0xb767x7.height() >= _0xb767x6.offset().top && (_0xb767x7.off('scroll', _0xb767x8), ajaxWidget(_0xb767x6, 'list1', _0xb767x4, _0xb767x5, _0xb767x3))
     }).trigger('scroll'))
-}), $('#colorify-proBy-LimonSeo-related-posts .HTML').each(function (_0xb767x3, _0xb767x4) {
+}), $('#colorify-blogger-related-posts .HTML').each(function (_0xb767x3, _0xb767x4) {
     var _0xb767x5 = $(this).data('shortcode');
     if (null != _0xb767x5) {
         function _0xb767x6() {
@@ -389,14 +389,14 @@ $('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-ma
         $('#related-wrap').each(function (_0xb767x3, _0xb767x4) {
             var _0xb767x5 = $(this),
                 _0xb767x7 = $(window),
-                _0xb767x8 = _0xb767x5.find('.colorify-proBy-LimonSeo-related-content'),
+                _0xb767x8 = _0xb767x5.find('.colorify-blogger-related-content'),
                 _0xb767x9 = _0xb767x6();
             _0xb767x3 = 0 != _0xb767x9[1] ? _0xb767x9[1] : 4, 0 != _0xb767x9[0] && _0xb767x5.find('.related-title .title').text(_0xb767x9[0]), _0xb767x4 = _0xb767x5.find('.related-tag').data('label'), _0xb767x7.on('scroll', function _0xb767x5() {
                 _0xb767x7.scrollTop() + _0xb767x7.height() >= _0xb767x8.offset().top && (_0xb767x7.off('scroll', _0xb767x5), ajaxRelated(_0xb767x8, 'related', _0xb767x3, _0xb767x4, 'getrelated'))
             }).trigger('scroll')
         })
     }
-}), $('.colorify-proBy-LimonSeo-blog-post-comments').each(function () {
+}), $('.colorify-blogger-blog-post-comments').each(function () {
     1 != darkMode && 'dark' == localStorage.themeColor && (fbCommentsTheme = 'dark');
     var _0xb767x3 = $(this),
         _0xb767x4 = _0xb767x3.data('shortcode'),
@@ -426,21 +426,21 @@ $('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-ma
         _0xb767x11.hide(), _0xb767x12.show()
     })
 }), $(function () {
-    $('.entry-image-wrap .entry-thumb,.author-avatar-wrap .author-avatar,#footer-fbm .Image').lazyify(), $('#colorify-proBy-LimonSeo-mobile-menu').each(function () {
+    $('.entry-image-wrap .entry-thumb,.author-avatar-wrap .author-avatar,#footer-fbm .Image').lazyify(), $('#colorify-blogger-mobile-menu').each(function () {
         var _0xb767x3 = $(this),
-            _0xb767x4 = $('#colorify-proBy-LimonSeo-main-nav-menu').clone();
+            _0xb767x4 = $('#colorify-blogger-main-nav-menu').clone();
         _0xb767x4.attr('id', 'main-mobile-nav'), _0xb767x4.find('.mega-items').remove(), _0xb767x4.find('.mega-menu > a').each(function (_0xb767x3, _0xb767x4) {
             var _0xb767x5 = $(this),
                 _0xb767x6 = _0xb767x5.data('shortcode');
             null != _0xb767x6 && (_0xb767x4 = 'recent' == (_0xb767x3 = shortCodeIfy(_0xb767x6.trim(), 'label')) ? '/search' : '/search/label/' + _0xb767x3, _0xb767x5.attr('href', _0xb767x4))
-        }), _0xb767x4.appendTo(_0xb767x3), $('.mobile-menu-toggle, .hide-colorify-proBy-LimonSeo-mobile-menu, .overlay').on('click', function () {
+        }), _0xb767x4.appendTo(_0xb767x3), $('.mobile-menu-toggle, .hide-colorify-blogger-mobile-menu, .overlay').on('click', function () {
             $('body').toggleClass('nav-active')
-        }), $('.colorify-proBy-LimonSeo-mobile-menu .has-sub').append('<div class="submenu-toggle"/>'), $('.colorify-proBy-LimonSeo-mobile-menu .mega-menu').find('.submenu-toggle').remove(), $('.colorify-proBy-LimonSeo-mobile-menu ul li .submenu-toggle').on('click', function (_0xb767x3) {
+        }), $('.colorify-blogger-mobile-menu .has-sub').append('<div class="submenu-toggle"/>'), $('.colorify-blogger-mobile-menu .mega-menu').find('.submenu-toggle').remove(), $('.colorify-blogger-mobile-menu ul li .submenu-toggle').on('click', function (_0xb767x3) {
             $(this).parent().hasClass('has-sub') && (_0xb767x3.preventDefault(), $(this).parent().hasClass('show') ? $(this).parent().removeClass('show').find('> .m-sub').slideToggle(170) : $(this).parent().addClass('show').children('.m-sub').slideToggle(170))
         })
     }), $('.mm-footer .mm-social').each(function () {
         var _0xb767x3 = $(this),
-            _0xb767x4 = $('#colorify-proBy-LimonSeo-about-section ul.social').clone();
+            _0xb767x4 = $('#colorify-blogger-about-section ul.social').clone();
         _0xb767x4.removeClass('social-bg-hover'), _0xb767x4.appendTo(_0xb767x3)
     }), $('.mm-footer .mm-menu').each(function () {
         var _0xb767x3 = $(this);
@@ -469,14 +469,14 @@ $('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-ma
     }), $('p.comment-content').each(function () {
         var _0xb767x3 = $(this);
         _0xb767x3.replaceText(/(https:\/\/\S+(\.png|\.jpeg|\.jpg|\.gif))/g, '<img src="$1"/>'), _0xb767x3.replaceText(/(?:https:\/\/)?(?:www\.)?(?:youtube\.com)\/(?:watch\?v=)?(.+)/g, '<div class="responsive-video-wrap"><iframe id="youtube" width="100%" height="358" src="https://www.youtube.com/embed/$1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>')
-    }), $('#colorify-proBy-LimonSeo-load-more-link').each(function () {
+    }), $('#colorify-blogger-load-more-link').each(function () {
         var _0xb767x3 = $(this).data('load');
-        _0xb767x3 && $('#colorify-proBy-LimonSeo-load-more-link').show(), $('#colorify-proBy-LimonSeo-load-more-link').on('click', function (_0xb767x4) {
-            $('#colorify-proBy-LimonSeo-load-more-link').hide(), $.ajax({
+        _0xb767x3 && $('#colorify-blogger-load-more-link').show(), $('#colorify-blogger-load-more-link').on('click', function (_0xb767x4) {
+            $('#colorify-blogger-load-more-link').hide(), $.ajax({
                 url: _0xb767x3,
                 success: function (_0xb767x4) {
                     var _0xb767x5 = $(_0xb767x4).find('.blog-posts');
-                    _0xb767x5.find('.index-post').addClass('post-animated post-fadeInUp'), $('.blog-posts').append(_0xb767x5.html()), (_0xb767x3 = $(_0xb767x4).find('#colorify-proBy-LimonSeo-load-more-link').data('load')) ? $('#colorify-proBy-LimonSeo-load-more-link').show() : ($('#colorify-proBy-LimonSeo-load-more-link').hide(), $('#blog-pager .no-more').addClass('show'))
+                    _0xb767x5.find('.index-post').addClass('post-animated post-fadeInUp'), $('.blog-posts').append(_0xb767x5.html()), (_0xb767x3 = $(_0xb767x4).find('#colorify-blogger-load-more-link').data('load')) ? $('#colorify-blogger-load-more-link').show() : ($('#colorify-blogger-load-more-link').hide(), $('#blog-pager .no-more').addClass('show'))
                 },
                 beforeSend: function () {
                     $('#blog-pager .loading').show()
@@ -486,12 +486,12 @@ $('#colorify-proBy-LimonSeo-main-nav').menuify(), $('#colorify-proBy-LimonSeo-ma
                 }
             }), _0xb767x4.preventDefault()
         })
-    }), $('#colorify-proBy-LimonSeo-cookie-ify').each(function () {
+    }), $('#colorify-blogger-cookie-ify').each(function () {
         var _0xb767x3 = $(this),
             _0xb767x4 = _0xb767x3.find('.widget.Text').data('shortcode');
-        null != _0xb767x4 && (ok = shortCodeIfy(_0xb767x4, 'ok'), days = shortCodeIfy(_0xb767x4, 'days'), 0 != ok && _0xb767x3.find('#colorify-proBy-LimonSeo-cookie-ify-accept').text(ok), 0 != days ? days = Number(days) : days = 7), _0xb767x3.length > 0 && ('1' !== $.cookie('colorify_preview_cookie_ify_consent') && (_0xb767x3.css('display', 'block'), setTimeout(function () {
+        null != _0xb767x4 && (ok = shortCodeIfy(_0xb767x4, 'ok'), days = shortCodeIfy(_0xb767x4, 'days'), 0 != ok && _0xb767x3.find('#colorify-blogger-cookie-ify-accept').text(ok), 0 != days ? days = Number(days) : days = 7), _0xb767x3.length > 0 && ('1' !== $.cookie('colorify_preview_cookie_ify_consent') && (_0xb767x3.css('display', 'block'), setTimeout(function () {
             _0xb767x3.addClass('is-visible')
-        }, 10)), $('#colorify-proBy-LimonSeo-cookie-ify-accept').off('click').on('click', function (_0xb767x4) {
+        }, 10)), $('#colorify-blogger-cookie-ify-accept').off('click').on('click', function (_0xb767x4) {
             _0xb767x4.preventDefault(), _0xb767x4.stopPropagation(), $.cookie('colorify_preview_cookie_ify_consent', '1', {
                 expires: days,
                 path: '/'
