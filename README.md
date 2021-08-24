@@ -1,0 +1,1 @@
+# attractiveaurora-assets
